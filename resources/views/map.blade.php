@@ -28,7 +28,7 @@
     }
   </style>
    
-  <script>
+  {{-- <script>
     function getDataFromDb() {
           $.ajax({
                   url: 'datadustdtec',
@@ -456,15 +456,15 @@ $.ajax({
    
 }
 setInterval(getDataFromAm, 1000);
-</script>
+</script> --}}
 
 @endsection
 
 
 @section('content')
 <div id="map"></div>
-    
-<script>
+    <div align="center">Coming soon...</div>
+{{-- <script>
   function initMap() {
 var mapOptions = {
   center: {lat: 17.4517878, lng: 102.9339000},
@@ -499,7 +499,7 @@ google.maps.event.addListener(marker, 'click', function() {
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlFtmZCzKWIYGevwk4VQbwP9Z45-e3qGo&callback=initMap"
 async defer>
-</script>
+</script> --}}
 @endsection
 {{-- <!DOCTYPE html>
 <html>

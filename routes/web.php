@@ -39,7 +39,6 @@ Route::get('layout/master', function () {
     return view('close');
 });*/
 
-
 /****** dustdetec  ******/
 Route::get('api/datadustdtec', 'dustdetecController@dataDustDTEC');
 Route::get('minmaxdustdtec', 'dustdetecController@minmaxDustDTEC');
@@ -50,13 +49,13 @@ Route::get( 'checkchartDustDTEC7days', 'dustdetecController@chartjsDusDTEC7days'
 Route::get( 'checkchartDustDTECall', 'dustdetecController@chartjsDusDTECall');
 
 /****** ambient *******/
-Route::get('api/dataambient', 'ProjectController@dataAmbient');
-Route::get('minmaxambient', 'ProjectController@minmaxAmbient');
-Route::get( 'dataambientgauge', 'ProjectController@dataAmbientgauge');
-Route::get('checkchartAmbienttoday', 'ProjectController@chartjsAmbienttoday');
-Route::get('checkchartAmbient7days', 'ProjectController@chartjsAmbient7days');
-Route::get('checkchartAmbientall', 'ProjectController@chartjsAmbientall');
-Route::get('Am','ProjectController@Am');
+Route::get('api/dataambient', 'ambientController@dataAmbient');
+Route::get('minmaxambient', 'ambientController@minmaxAmbient');
+Route::get( 'dataambientgauge', 'ambientController@dataAmbientgauge');
+Route::get('checkchartAmbienttoday', 'ambientController@chartjsAmbienttoday');
+Route::get('checkchartAmbient7days', 'ambientController@chartjsAmbient7days');
+Route::get('checkchartAmbientall', 'ambientController@chartjsAmbientall');
+Route::get('Am','ambientController@Am');
 
 
 Route::get('check', function ( Request $request) {
@@ -108,7 +107,7 @@ Route::get('ajaxreportdatasummary5day', 'ProjectController@ajaxreportdatasummary
 Route::get('ajaxreportdatasummary7day', 'ProjectController@ajaxreportdatasummary7day');
 
 
-Route::get('savedata', 'ProjectController@savedata');
+Route::get('savedata', 'ambientController@savedata');
 
 
 
